@@ -8,17 +8,17 @@
 <body>
     <?php 
       for ($i=0; $i < 10; $i++) { 
-        echo $i; //0123456789
+        //echo $i; //0123456789
       }
 
       $index = 0;
       while ($index <= 10) {
-         echo $index;
+         //echo $index;
          $index++;
       }
 
       do {
-        echo $index;
+        //echo $index;
         $index++;
       } while ($index <= 10);
       
@@ -95,12 +95,26 @@
           ]
       ];
 
-       $mangLienHopNhieuChieu[0]["address"]["line2"];// Quang Ninh
+      $mangLienHopNhieuChieu[0]["address"]["line2"];// Quang Ninh
 
 
-      
+      $mangMotChieu = array(0,1,2,3,4,5,6);
+      for ($i=0; $i < count($mangMotChieu); $i++) { 
+         echo $mangMotChieu[$i];
+      }
 
+      foreach ($mangMotChieu as $r) {
+          echo $r;
+      }
 
+      $mangLienHop = array(
+          'name'=>'Luan',
+          'adress'=>'Ha Long'
+      );
+      echo '<br>';
+      foreach ($mangLienHop as $k => $v) {
+         echo $k. ' '.$v .'<br>';
+      }
 
 
     ?>
